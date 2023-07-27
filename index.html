@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tip and Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="sales_tax.js"></script>
+</head>
+<body>
+<main>
+    <h1>Tip and Tax Calculator</h1>
+    <p>Enter Subtotal, Tip and Tax Rate and click "Calculate".</p> 
+
+    <label for="subtotal">Subtotal:</label>
+    <input type="text" id="subtotal" >
+    <span>*</span><br>
+  
+   
+    <label for="tax_rate">Tax Rate:</label>
+    <select id="tax_rate">
+     <option value="4.00">Alabama 4.00%</option>
+     <option value="0.00">Alaska 0.00%</option>
+     <option value="5.60">Arizona 5.60%</option>
+     <option value="6.50">Arkansas 6.50%</option>
+     <option value="7.25">California 7.25%</option>
+     <option value="2.9">Colorado 2.90%</option>
+     <option value="6.35">Connecticut 6.35%</option>
+     <option value="0.00">Delaware 0.00%</option>
+     <option value="6.00">Florida 6.00%</option>
+     <option value="4.00">Georgia 4.00%</option>
+     <option value="4.00">Hawaii 4.00%</option>
+     <option value="6.00">Idaho 6.00%</option>
+     <option value="6.25">Illinois 6.25%</option>
+     <option value="7.00">Indiana 7.00%</option>
+     <option value="6.00">Iowa 6.00%</option>
+     <option value="6.50">Kansas 6.50%</option>
+     <option value="6.00">Kentucky 6.00%</option>
+     <option value="4.45">Louisiana 4.45%</option>
+     <option value="5.50">Maine 5.50%</option>
+     <option value="6.00">Maryland 6.00%</option>
+     <option value="6.25">Massachusetts 6.25%</option>
+     <option value="6.00">Michigan 6.00%</option>
+     <option value="6.88">Minnesota 6.88%</option>
+     <option value="7.00">Mississippi 7.00%</option>
+     <option value="4.23">Missouri 4.23%</option>
+     <option value="0.00">Montana 0.00%</option>
+     <option value="5.50">Nebraska 5.50%</option>
+     <option value="6.85">Nevada 6.85%</option>
+     <option value="0.00">New Hampshire 0.00%</option>
+     <option value="6.63">New Jersey 6.63%</option>
+     <option value="4.00">New York 4.00%</option>
+     <option value="4.75">North Carolina 4.75%</option>
+     <option value="5.00">North Dakota 5.00%</option>
+     <option value="5.75">Ohio 5.75%</option>
+     <option value="4.50">Oklahoma 4.505%</option>
+     <option value="0.00">Oregon 0.00%</option>
+     <option value="6.00">Pennsylvania 6.00%</option>
+     <option value="7.00">Rhode Island 7.00%</option>
+     <option value="6.00">South Carolina 6.00%</option>
+     <option value="4.20">South Dakota 4.20%</option>
+     <option value="7.00">Tennessee 7.00%</option>
+     <option value="6.25">Tennessee 6.25%</option>
+     <option value="6.10">Utah 6.10%</option>
+     <option value="6.00">Vermont 6.00%</option>
+     <option value="5.30">Virginia 5.30%</option>
+     <option value="6.00">West Virginia 5.30%</option>
+     <option value="5.00">Wisconsin 5.00%</option>
+     <option value="4.00">Wyoming 4.00%</option>
+     <option value="6.00">D.C. 6.00%</option>
+ </select>
+<span>*</span><br>
+
+    <label for="tip">Tip:</label>
+    <input type="text" id="tip" >
+    <span>*</span><br>
+
+    <label for="sales_tax">Sales Tax:</label>
+    <input type="text" id="sales_tax" disabled ><br>
+
+    <label for="tip_amount">Tip Amount:</label>
+    <input type="text" id="tip_amount" disabled ><br>
+
+    <label for="total">Total:</label>
+    <input type="text" id="total" disabled ><br>
+
+    <label>&nbsp;</label>
+    <input type="button" id="calculate" value="Calculate" >
+    <input type="button" id="clear" value="Clear" ><br>
+</main>
+</body>
+</html>
